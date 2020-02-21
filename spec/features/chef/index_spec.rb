@@ -1,0 +1,17 @@
+require 'rails_helper'
+
+describe "can create stuff" do
+    chef_1 = Chef.create(name: "Boyardee")
+    dish_1 = chef_1.dishes.create(name:"Ravioli", description: "The timeless flavor everyone loves.")
+    dish_2 = chef_1.dishes.create(name:"Beefaroni", description: "It's about great ingredients.")
+    
+    chef_2 = Chef.create(name: "Salt Bae")
+    dish_3 = chef_2.dishes.create(name:"Fillet Mignon", description: "Well sprinkled meat.")
+    dish_4 = chef_2.dishes.create(name:"Tomahawk Steak ", description: "Saltbae's signature dish.")
+
+    chef_3 = Chef.create(name: "Gordon Ramsay")
+    dish_5 = chef_3.dishes.create(name:"Jerk Chicken", description: "Fancy finger food.")
+    dish_6 = chef_3.dishes.create(name:"Apple Pie Porridge", description: "Fancy Oatmeal.")
+
+end
+
