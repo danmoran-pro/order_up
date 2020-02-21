@@ -26,4 +26,17 @@ describe "visit a chef's show page" do
         expect(page).to have_content(ingredient_1.name)
         expect(page).to have_content(ingredient_2.name)
     end 
+
+#     it "can display most popular dishes" do \
+#         chef_1 = Chef.create(name: "Boyardee")
+        
+#         visit chef_path(chef_1)
+
+#         expect(page).to have_content()  
+
+#     end 
 end 
+
+
+# I see the three most popular ingredients that the chef uses in their dishes 
+# (Popularity is based off of how many dishes use that ingredient) 
