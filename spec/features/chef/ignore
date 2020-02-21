@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 describe "can create stuff" do
+    #these are basicly my seeds
     chef_1 = Chef.create(name: "Boyardee")
     dish_1 = chef_1.dishes.create(name:"Ravioli", description: "The timeless flavor everyone loves.")
     dish_2 = chef_1.dishes.create(name:"Beefaroni", description: "It's about great ingredients.")
